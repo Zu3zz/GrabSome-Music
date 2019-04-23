@@ -1,12 +1,25 @@
 <template>
   <div id="app">
-    hello world
+    <m-header />
+    <tab />
+    <keep-alive>
+      <router-view />
+    </keep-alive>
   </div>
 </template>
 
-<style lang="stylus">
-  @import "common/stylus/variable"
+<script>
+import MHeader from 'components/m-header/m-header'
+import Tab from 'components/tab/tab'
+export default {
+  components: {
+    MHeader,
+    Tab
+  }
+}
+</script>
 
-  #app
-    color: $color-theme
+
+<style lang="stylus">
+@import "~common/stylus/variable"
 </style>
