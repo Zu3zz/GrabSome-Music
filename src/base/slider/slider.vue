@@ -1,20 +1,21 @@
 <template>
   <div class="slider" ref="slider">
     <div class="slider-group" ref="sliderGroup">
-      <slot />
+      <slot>
+      </slot>
     </div>
     <div class="dots">
-      <span class="dot" :class="{active: currentPageIndex === index}" v-for="(item, index) in dots" :key="index"></span>
+      <span class="dot" :class="{active: currentPageIndex === index }" v-for="(item, index) in dots" :key="index"></span>
     </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
+import { addClass } from 'common/js/dom'
 import BScroll from 'better-scroll'
-import { addClass } from 'vue-awesome-swiper'
+
 export default {
   name: 'slider',
-  components: {},
   props: {
     loop: {
       type: Boolean,
@@ -59,7 +60,7 @@ export default {
             this._play()
           }
         }
-        this._refresh()
+        this.refresh()
       }, 60)
     })
   },
@@ -82,7 +83,7 @@ export default {
   },
   methods: {
     refresh() {
-      if (!this.slider) {
+      if (this.slider) {
         this._setSliderWidth(true)
         this.slider.refresh()
       }
