@@ -54,7 +54,7 @@ export default {
       this.$router.push({
         path: `/rank/${item.id}`
       })
-      this.settopList(item)
+      this.setTopList(item)
     },
     _getTopList() {
       getTopList().then(res => {
