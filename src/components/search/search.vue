@@ -153,13 +153,14 @@ export default {
 
           .text {
             flex: 1;
+            font-size: $font-size-small;
           }
 
           .clear {
             extend-click();
 
             .icon-clear {
-              font-size: $font-size-medium;
+              font-size: $font-size-small;
               color: $color-text-d;
             }
           }

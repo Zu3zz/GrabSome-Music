@@ -23,6 +23,7 @@ function insertArray (arr, val, compare, maxLen) {
   }
 }
 
+
 function deleteFromArray (arr, compare) {
   const index = arr.findIndex(compare)
   if (index > -1) {
