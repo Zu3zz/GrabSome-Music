@@ -1,29 +1,26 @@
-# vue-music
+# 来点音乐
 
-## Project setup
+* 写代码累了吗 来点音乐吧
+* 基于vue.js@2.6.9
+* 数据均来自qq音乐 通过jsonp获取
+
+## 安装所需要的包
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 启动服务 本地浏览器打开localhost:8080
 ```
 yarn run serve
 ```
 
-### Compiles and minifies for production
+### 打包项目
 ```
 yarn run build
 ```
 
-### Run your tests
-```
-yarn run test
-```
+[项目演示地址](http://ustbhuangyi.com/music/)
 
-### Lints and fixes files
-```
-yarn run lint
-```
+![二维码](http://qr.api.cli.im/qr?data=http%253A%252F%252Fustbhuangyi.com%252Fmusic&level=H&transparent=false&bgcolor=%23ffffff&forecolor=%23000000&blockpixel=12&marginblock=1&logourl=&size=280&kid=cliim&key=ab1f62311bfc4de5bc301283707c0328)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![项目展示](./public/base.png)
